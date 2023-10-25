@@ -51,7 +51,8 @@ namespace Runtime.Controllers
 
         private void MovePlayer()
         {
-            _rigidbody.velocity += new Vector3(_inputValues.x, 0, _inputValues.y) * (_data.Speed * Time.fixedDeltaTime);
+            _rigidbody.velocity += new Vector3(_inputValues.x, 0, _inputValues.y) 
+                                   * (_data.Speed * Time.fixedDeltaTime);
             Debug.LogWarning(_rigidbody.velocity);
         }
     }
